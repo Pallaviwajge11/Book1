@@ -4,8 +4,7 @@ from .models import Book
 # Create your views here.
 
 def index(request):
-    book_list = Book.objects.all()
-    return HttpResponse(book_list)
+    return HttpResponse('<h1>Namaskaram</h1>')
 
 def products(request):
     return HttpResponse('Products')
